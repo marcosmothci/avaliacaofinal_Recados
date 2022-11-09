@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(68, 214, 10);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+tbody,
+td{
+    border: 3px solid rgb(68, 214, 10);
+    color: rgb(68, 214, 10);
+}
+td{
+    word-break: break-all
+}
+fieldset {
+    border: 3px solid rgb(68, 214, 10);   
+}
+
+::placeholder {
+    color: rgb(68, 214, 10)
+}
+
+#noteTable tr:not(:first-child):hover td {
+    background-color: rgb(68, 214, 10);
+    color: black;
+    border-color: black;
+}
+
+input:focus {
+    background-color: rgb(68, 214, 10);
+    color: black
+}
+
+button:hover {
+    border-color: black;
+}
+
+tr {
+    overflow-wrap: break-word;
+}

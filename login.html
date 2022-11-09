@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>codeMarcos.Recados</title>
+  </head>
+  <body class="vh-100 vw-100">
+    <main
+      class="container container-fluid d-flex justify-content-center align-items-center h-100 v-100"
+    >
+      <div class="row h-100 v-100">
+        <form
+          class="col-12 d-flex flex-column justify-content-center align-items-center h-100 v-100 animate__animated animate__zoomInDown"
+          id="loginForm"
+        >
+          <fieldset class="p-2" id="fsLogin">
+            <legend>LOGIN</legend>
+            <label for="emailLogin">E-mail:</label>
+            <input
+              class="form-control"
+              type="email"
+              name="emailLogin"
+              id="emailLogin"
+              placeholder="digite seu e-mail"
+            />
+            <br />
+
+            <label for="loginPass">Senha:</label>
+            <input
+              class="form-control"
+              type="password"
+              name="loginPass"
+              id="loginPass"
+              placeholder="digite sua senha"
+            />
+            <br />
+          </fieldset>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between">
+              <button
+                class="btn btn-success m-2"
+                type="button"
+                id="entrar"
+                onclick="login()"
+              >
+                Entrar
+              </button>
+              <button class="btn btn-danger m-2" type="reset">Limpar</button>
+            </div>
+          </div>
+          <p class="text-center">
+            Ainda não tem conta? <a href="./cadastro.html">CADASTRE-SE JÁ!</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="login.js"></script>
+  </body>
+</html>
